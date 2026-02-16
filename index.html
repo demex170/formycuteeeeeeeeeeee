@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nini ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginScreen" class="login">
+    <h2>🔐 მხოლოდ ნინისთვის</h2>
+    <input type="password" id="password" placeholder="პაროლი">
+    <button onclick="checkPassword()">გახსნა ❤️</button>
+</div>
+
+<div id="mainContent" style="display:none;">
+
+<audio id="bgMusic" loop>
+    <source src="music/love.mp3" type="audio/mp3">
+</audio>
+
+<canvas id="stars"></canvas>
+<canvas id="hearts"></canvas>
+<canvas id="fireworks"></canvas>
+
+<button class="modeToggle" onclick="toggleMode()">🌙</button>
+<button class="valentineBtn" onclick="valentineMode()">🌹</button>
+
+<section class="hero">
+    <h1>ნინი</h1>
+    <p id="typing"></p>
+    <button onclick="launchSurprise()">Surprise 🎇</button>
+</section>
+
+<section class="slideshow">
+    <div class="slides">
+        <img src="images/slide1.jpg">
+        <img src="images/slide2.jpg">
+        <img src="images/slide3.jpg">
+    </div>
+</section>
+
+<section class="counter">
+    <h2>ერთად უკვე:</h2>
+    <p id="daysTogether"></p>
+</section>
+
+<section class="proposal">
+    <button onclick="showRing()">💍</button>
+    <div id="ringBox" class="ringBox">
+        <img src="images/ring.png">
+        <h1>Forever? ❤️</h1>
+    </div>
+</section>
+
+<section class="quiz">
+    <h2>Love Quiz 💕</h2>
+    <p>ვინ გიყვარს ყველაზე მეტად?</p>
+    <button onclick="quizAnswer()">1) მე</button>
+    <button onclick="quizAnswer()">2) მაინც მე</button>
+    <p id="quizResult"></p>
+</section>
+
+<section class="game">
+    <h2>Catch My Love ❤️</h2>
+    <button id="loveBtn" onclick="scorePoint()">❤️</button>
+    <p>Score: <span id="score">0</span></p>
+</section>
+
+<section class="map">
+    <h2>სად დაიწყო ყველაფერი 📍</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Tbilisi&output=embed">
+    </iframe>
+</section>
+
+<div id="secretTrigger"></div>
+<div id="secretMessage">💌 შენ ხარ ჩემი სამუდამო სიყვარული.</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
